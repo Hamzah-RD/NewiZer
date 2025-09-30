@@ -1,5 +1,6 @@
 package com.example.newizer.Adapter;
 
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
+import com.example.newizer.Activities.NewsDetailActivity;
 import com.example.newizer.ModelClass.TrendingModel;
 import com.example.newizer.R;
 
@@ -31,12 +33,13 @@ public class TrendingAdapter extends RecyclerView.Adapter<TrendingAdapter.Viewho
 
     @Override
     public void onBindViewHolder(@NonNull TrendingAdapter.Viewholder holder, int position) {
-        int trendingID=trendingModelList.get(position).getId();
-        String trendingTitle=trendingModelList.get(position).getTrendingTitle();
-        String trendingImageURL=trendingModelList.get(position).getTrendingImageURL();
-        String trendingCategory=trendingModelList.get(position).getTrendingCategory();
-        String trendingDate=trendingModelList.get(position).getTrendingDate();
-        holder.setData(trendingID,trendingTitle,trendingCategory,trendingDate,trendingImageURL);
+//        int trendingID=trendingModelList.get(position).getId();
+//        String trendingTitle=trendingModelList.get(position).getTrendingTitle();
+//        String trendingImageURL=trendingModelList.get(position).getTrendingImageURL();
+//        String trendingCategory=trendingModelList.get(position).getTrendingCategory();
+//        String trendingDate=trendingModelList.get(position).getTrendingDate();
+        TrendingModel model=trendingModelList.get(position);
+        holder.setData(model);
 
     }
 
@@ -55,19 +58,36 @@ public class TrendingAdapter extends RecyclerView.Adapter<TrendingAdapter.Viewho
             trendingTitle=itemView.findViewById(R.id.trendingTitle);
             trendingDate=itemView.findViewById(R.id.trendingDate);
             trendingCategory=itemView.findViewById(R.id.trendingCategory);
+
         }
-        public  void setData(int id,String Title,String Category,String Date,String ImageURL)
+        public  void setData(TrendingModel model)
         {
-            trendingTitle.setText(Title);
-            trendingDate.setText(Date);
-            trendingCategory.setText(Category);
+            trendingTitle.setText(model.getTrendingTitle());
+            trendingDate.setText(model.getTrendingDate());
+            trendingCategory.setText(model.getTrendingCategory());
+
 
             Glide
                     .with(itemView.getContext())
-                    .load(ImageURL)
+                    .load(model.getTrendingImageURL())
                     .centerCrop()
                     .placeholder(R.drawable.logo)
                     .into(TrendingImage);
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent=new Intent(itemView.getContext(), NewsDetailActivity.class);
+                    intent.putExtra("title", model.getTrendingTitle());
+                    intent.putExtra("image", model.getTrendingImageURL());
+                    intent.putExtra("date", model.getTrendingDate());
+                    intent.putExtra("content", model.getTrendingContent());
+
+                    intent.putExtra("url", model.getTrendingUrl());
+                    intent.putExtra("category", model.getTrendingCategory());
+
+                    itemView.getContext().startActivity(intent);
+                }
+            });
 
         }
     }

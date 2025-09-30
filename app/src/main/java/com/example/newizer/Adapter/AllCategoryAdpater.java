@@ -15,27 +15,28 @@ import com.example.newizer.R;
 
 import java.util.List;
 
-public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHolder> {
-
-    public CategoryAdapter(List<CategoryModel> categoryModelList) {
-        this.categoryModelList = categoryModelList;
-    }
+public class AllCategoryAdpater extends RecyclerView.Adapter<AllCategoryAdpater.ViewHolder> {
 
     List<CategoryModel> categoryModelList;
 
+    public AllCategoryAdpater(List<CategoryModel> categoryModelList) {
+        this.categoryModelList = categoryModelList;
+    }
+
     @NonNull
     @Override
-    public CategoryAdapter.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.category_item_layout,parent,false);
-        return  new viewHolder(view);
+    public AllCategoryAdpater.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view= LayoutInflater.from(parent.getContext()).inflate(R.layout.all_category_item,parent,false);
+        return new ViewHolder(view);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CategoryAdapter.viewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AllCategoryAdpater.ViewHolder holder, int position) {
         int catid=categoryModelList.get(position).getCategoryid();
         String cattext=categoryModelList.get(position).getCategoryname();
         String catimage=categoryModelList.get(position).getImageurl();
         holder.setData(catid,cattext,catimage);
+
 
     }
 
@@ -44,15 +45,14 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHo
         return categoryModelList.size();
     }
 
-    public class viewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
+        ImageView categoryimage;
+        TextView categorytext;
 
-     ImageView categoryimage;
-     TextView categorytext;
-
-        public viewHolder(@NonNull View itemView) {
+        public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            categoryimage=itemView.findViewById(R.id.category_image);
-            categorytext=itemView.findViewById(R.id.category_textView);
+            categoryimage=itemView.findViewById(R.id.allcategory_image);
+            categorytext=itemView.findViewById(R.id.allcategory_textView);
         }
         private  void setData(int categoryid,String categoryname,String categoryURL)
         {
@@ -65,6 +65,4 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.viewHo
                     .into(categoryimage);
         }
     }
-
-
 }

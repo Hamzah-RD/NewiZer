@@ -25,3 +25,4 @@ public class SliderModel {
         this.imageURL = imageURL;
     }
 }
+

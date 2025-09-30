@@ -9,4 +9,49 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="technolgy">Technolgy</string>
     <string name="trending_news">Trending News</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="printers_in_the_1500s_scrambled_the_words_from_cicero_s_de_finibus_bonorum_et_malorum_after_mixing_the_words_in_each_sentence_the_familiar_lorem_ipsum_dolor_sit_amet_text_emerged_when_16th_century_printers_adapted_cicero_s_original_work_beginning_with_the_phrase_dolor_sit_amet_consectetur_they_abbreviated_dolorem_meaning_pain_to_lorem_which_carries_no_meaning_in_latin_ipsum_translates_to_itself_and_the_text_frequently_includes_phrases_such_as_consectetur_adipiscing_elit_and_ut_labore_et_dolore_these_latin_fragments_derived_from_cicero_s_philosophical_treatise_were_rearranged_to_create_the_standard_dummy_text_that_has_become_a_fundamental_tool_in_design_and_typography_across_generations_the_short_answer_is_that_lorem_ipsum_text_doesn_t_actually_say_anything_meaningful_it_s_deliberately_scrambled_latin_that_doesn_t_form_coherent_sentences_while_it_comes_from_cicero_s_de_finibus_bonorum_et_malorum_the_text_has_been_modified_so_extensively_that_it_s_nonsensical_why_scrambled_text_that_s_exactly_the_point_by_using_text_that_s_unreadable_but_maintains_the_general_pattern_of_regular_writing_including_normal_word_length_spacing_and_punctuation_designers_can_focus_on_the_visual_elements_of_a_layout_without_the_actual_content_getting_in_the_way_the_pseudo_latin_appearance_gives_it_a_natural_feel_while_ensuring_it_won_t_distract_from_the_design_itself">Printers in the 1500s scrambled the words from Cicero\'s De Finibus Bonorum et Malorum\'\' after mixing the words in each sentence. The familiar lorem ipsum dolor sit amet text emerged when 16th-century printers adapted Cicero\'s original work, beginning with the phrase dolor sit amet consectetur. They abbreviated dolorem (meaning pain) to lorem, which carries no meaning in Latin. Ipsum translates to itself, and the text frequently includes phrases such as consectetur adipiscing elit and ut labore et dolore. These Latin fragments, derived from Cicero\'s philosophical treatise, were rearranged to create the standard dummy text that has become a fundamental tool in design and typography across generations. The short answer is that lorem ipsum text doesn\'t actually say anything meaningful. It\'s deliberately scrambled Latin that doesn\'t form coherent sentences. While it comes from Cicero\'s De Finibus Bonorum et Malorum, the text has been modified so extensively that it\'s nonsensical. Why scrambled text? That\'s exactly the point. By using text that\'s unreadable but maintains the general pattern of regular writing — including normal word length, spacing, and punctuation — designers can focus on the visual elements of a layout without the actual content getting in the way. The pseudo-Latin appearance gives it a natural feel while ensuring it won\'t distract from the design itself.</string>
+    <string name="pakistan_is_the_best_country_in_the_world">pakistan is the Best Country in the world</string>
+    <string name="pakistan_is_the_best_country_in_the_world1">pakistan is the Best Country in the world</string>
 </resources>

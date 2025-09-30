@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.NewsDetailActivity">
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#557790">
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="0dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="32dp"
+      android:text="Detail News"
+      android:textColor="@color/black"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <TextView
+      android:id="@+id/Newstitle"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:maxLines="3"
+      android:text="pakistan  is the Best Country in the world "
+      android:textColor="@color/black"
+      android:textSize="14sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+  <TextView
+      android:id="@+id/tvdate"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="4dp"
+      android:text="15/10/2025"
+      android:textColor="@color/categoryColor"
+      android:textSize="9sp"
+      android:textStyle="normal"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Newstitle" />
+
+  <TextView
+      android:id="@+id/tvCategory"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:layout_marginTop="4dp"
+      android:text="Technology"
+      android:textColor="@color/categoryColor"
+      android:textSize="10sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toEndOf="@+id/tvdate"
+      app:layout_constraintTop_toBottomOf="@+id/Newstitle" />
+
+  <androidx.cardview.widget.CardView
+      android:id="@+id/Cardview_image"
+      android:layout_width="match_parent"
+      android:layout_height="150dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="16dp"
+      app:cardCornerRadius="4dp"
+      app:cardElevation="8dp"
+      app:layout_constraintEnd_toEndOf="@+id/Newstitle"
+      app:layout_constraintStart_toStartOf="@+id/Newstitle"
+      app:layout_constraintTop_toBottomOf="@+id/tvdate">
+
+    <ImageView
+        android:id="@+id/NewsIamge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/logo"/>
+
+  </androidx.cardview.widget.CardView>
+  <TextView
+      android:id="@+id/tvDetail"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="16dp"
+      android:text="@string/printers_in_the_1500s_scrambled_the_words_from_cicero_s_de_finibus_bonorum_et_malorum_after_mixing_the_words_in_each_sentence_the_familiar_lorem_ipsum_dolor_sit_amet_text_emerged_when_16th_century_printers_adapted_cicero_s_original_work_beginning_with_the_phrase_dolor_sit_amet_consectetur_they_abbreviated_dolorem_meaning_pain_to_lorem_which_carries_no_meaning_in_latin_ipsum_translates_to_itself_and_the_text_frequently_includes_phrases_such_as_consectetur_adipiscing_elit_and_ut_labore_et_dolore_these_latin_fragments_derived_from_cicero_s_philosophical_treatise_were_rearranged_to_create_the_standard_dummy_text_that_has_become_a_fundamental_tool_in_design_and_typography_across_generations_the_short_answer_is_that_lorem_ipsum_text_doesn_t_actually_say_anything_meaningful_it_s_deliberately_scrambled_latin_that_doesn_t_form_coherent_sentences_while_it_comes_from_cicero_s_de_finibus_bonorum_et_malorum_the_text_has_been_modified_so_extensively_that_it_s_nonsensical_why_scrambled_text_that_s_exactly_the_point_by_using_text_that_s_unreadable_but_maintains_the_general_pattern_of_regular_writing_including_normal_word_length_spacing_and_punctuation_designers_can_focus_on_the_visual_elements_of_a_layout_without_the_actual_content_getting_in_the_way_the_pseudo_latin_appearance_gives_it_a_natural_feel_while_ensuring_it_won_t_distract_from_the_design_itself"
+      android:textColor="@color/black"
+      android:padding="16dp"
+      android:textSize="11sp"
+      android:textStyle="normal"
+      android:scrollbars="vertical"
+      android:ellipsize="none"
+      android:singleLine="false"
+      android:inputType="textMultiLine"
+      android:lineSpacingExtra="2dp"
+      android:lineBreakStyle="normal"
+      app:guidelineUseRtl="true"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/Cardview_image" />
+
+  <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+      android:id="@+id/youtube_player_view"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:elevation="8dp"
+      app:layout_constraintCircleRadius="8dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="16dp"
+      app:autoPlay="true"
+      android:background="#886600"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="parent"
+      app:videoId="S0Q4gqBUs7c"
+      tools:ignore="MissingClass" />
+
+  <WebView
+      android:id="@+id/webViewplayer"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="8dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="parent"
+      tools:ignore="WebViewLayout" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+  </ScrollView>

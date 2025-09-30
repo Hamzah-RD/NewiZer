@@ -4,6 +4,37 @@ public class TrendingModel {
 private  int id;
 private String trendingCategory;
 private String trendingTitle;
+private String trendingImageURL;
+private String trendingDate;
+private String trendingContent;
+private String trendingUrl;
+
+    public String getTrendingContent() {
+        return trendingContent;
+    }
+
+    public TrendingModel(int id, String trendingCategory, String trendingTitle, String trendingImageURL,
+                         String trendingDate, String trendingContent, String trendingUrl) {
+        this.id = id;
+        this.trendingCategory = trendingCategory;
+        this.trendingTitle = trendingTitle;
+        this.trendingImageURL = trendingImageURL;
+        this.trendingDate = trendingDate;
+        this.trendingContent = trendingContent;
+        this.trendingUrl = trendingUrl;
+    }
+
+    public void setTrendingContent(String trendingContent) {
+        this.trendingContent = trendingContent;
+    }
+
+    public String getTrendingUrl() {
+        return trendingUrl;
+    }
+
+    public void setTrendingUrl(String trendingUrl) {
+        this.trendingUrl = trendingUrl;
+    }
 
     public int getId() {
         return id;
@@ -45,14 +76,5 @@ private String trendingTitle;
         this.trendingDate = trendingDate;
     }
 
-    public TrendingModel(int id, String trendingCategory, String trendingTitle, String trendingImageURL, String testURl) {
-        this.id = id;
-        this.trendingCategory = trendingCategory;
-        this.trendingTitle = trendingTitle;
-        this.trendingImageURL = trendingImageURL;
-    }
-
-    private String trendingImageURL;
-private String   trendingDate;
 
 }
